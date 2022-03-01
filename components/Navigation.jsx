@@ -3,7 +3,10 @@ import Head from 'next/head';
 import Script from "next/script"
 
 function Navigation() {
-	var mobilemenu = document.getElementById('mobile-menu')
+	
+  return (
+    <>
+			<Script id="show-MNav" strategy="lazyOnload">{var mobilemenu = document.getElementById('mobile-menu')
 	var xButton = document.getElementById('X')
 	var menubutton = document.getElementById('menu-button')
 	var hamburgerbutton = document.getElementById('hamburger-button')
@@ -13,7 +16,7 @@ function Navigation() {
 	function check(){
 	  open = !open;
 	  if (open) {
-	    hamburgerbutton.classList.add('hidden')
+	    				hamburgerbutton.classList.add('hidden')
 	    xButton.classList.remove('hidden')
 	    mobilemenu.classList.remove('hidden')
 	  }
@@ -22,9 +25,7 @@ function Navigation() {
 	    xButton.classList.add('hidden')
 	    mobilemenu.classList.add('hidden')
 	  }
-	}
-  return (
-    <>
+	}}</Script>
 			<Head>
 			<link rel="apple-touch-icon" sizes="180x180" href="https://jeremiahis.vercel.app/assets/apple-touch-icon.png"/>
 <link rel="icon" type="image/png" sizes="32x32" href="https://jeremiahis.vercel.app/assets/favicon-32x32.png"/>
