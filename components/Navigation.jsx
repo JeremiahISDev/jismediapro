@@ -5,27 +5,8 @@ import Script from "next/script"
 function Navigation() {
 	
   return (
-    <>
-			<Script id="show-MNav" strategy="lazyOnload">{var mobilemenu = document.getElementById('mobile-menu')
-	var xButton = document.getElementById('X')
-	var menubutton = document.getElementById('menu-button')
-	var hamburgerbutton = document.getElementById('hamburger-button')
-	var open = false
-
-	
-	function check(){
-	  open = !open;
-	  if (open) {
-	    				hamburgerbutton.classList.add('hidden')
-	    xButton.classList.remove('hidden')
-	    mobilemenu.classList.remove('hidden')
-	  }
-	  if (!open) {
-	    hamburgerbutton.classList.remove('hidden')
-	    xButton.classList.add('hidden')
-	    mobilemenu.classList.add('hidden')
-	  }
-	}}</Script>
+		<>
+			
 			<Head>
 			<link rel="apple-touch-icon" sizes="180x180" href="https://jeremiahis.vercel.app/assets/apple-touch-icon.png"/>
 <link rel="icon" type="image/png" sizes="32x32" href="https://jeremiahis.vercel.app/assets/favicon-32x32.png"/>
@@ -47,28 +28,28 @@ function Navigation() {
 					<button type="button" id="menu-button" onClick={check()} className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none " aria-controls="mobile-menu" aria-expanded="false">
           <span className="sr-only">Open main menu</span>
           <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" id="hamburger-button">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
           <svg className="hidden h-6 w-6" id="X" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
       <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-        <a href="/">
+        <Link href="/">
         <div className="flex-shrink-0 flex items-center">
           <img className="block lg:hidden h-10 w-auto" src="https://icon-library.com/images/custom-facebook-icon/custom-facebook-icon-0.jpg" alt="Fake-book F"/>
           <img className="hidden lg:block h-10 w-auto"
           src="https://icon-library.com/images/custom-facebook-icon/custom-facebook-icon-0.jpg" alt="Fake-Book F"/>
         </div>
-        </a>
+        </Link>
         <div className="hidden sm:block sm:ml-6">
           <div className="flex space-x-4">
-            <a href="/" className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
+            <Link href="/" className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</Link>
 
-            <a href="/About" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+            <Link href="/Order" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Order</Link>
 
-            <a href="/Dates" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Important Dates</a>
+            <Link href="/contact" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
           </div>
         </div>
       </div>
@@ -78,11 +59,11 @@ function Navigation() {
 <nav className="bg-gray-800 w-screen">
   <div className="sm:hidden hidden" id="mobile-menu">
     <div className="px-2 pt-2 pb-3 space-y-1">
-      <a href="/" className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+      <Link href="/" className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</Link>
 
-      <a href="/About" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+      <Link href="/order" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Order</Link>
 
-      <a href="/Dates" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Important Dates</a>
+      <Link href="/contact" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</Link>
     </div>
   </div>
 </nav>
