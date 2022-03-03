@@ -60,11 +60,6 @@ const Navigation = () => {
               About
             </a>
           </Link>
-          <Link href="/Contact">
-            <a className="lg:inline-flex lg:w-auto px-3 py-2 rounded hover:text-white hover:bg-blue-600 focus:outline-none">
-              Contact Us
-            </a>
-          </Link>
           <Link href="/Order">
             <a className="lg:inline-flex lg:w-auto px-3 py-2 rounded hover:text-white hover:bg-blue-600 focus:outline-none">
               Order
