@@ -1,7 +1,6 @@
 import '../styles/globals.css'
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
-const Navigation = dynamic(()=>import("../components/Navigation"),{ssr:false})
+import Navigation from '../components/Navigation'
 export default function Portfolio({ Component, pageProps }) {
   return (
     <>

@@ -1,7 +1,10 @@
+import Head from 'next/head'
 export default function Home() {
   return (
-    <div>
-      HI
-    </div>
+    <>
+			<Head>
+		<title>Home | JIS Media Pro</title>
+		</Head>
+		</>
   )
 }
