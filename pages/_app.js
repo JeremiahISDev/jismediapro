@@ -10,19 +10,9 @@ export default function Portfolio({ Component, pageProps }) {
        <title>JIS Media Pro</title>
       </Head>
 		<Script
-  id="crisp-widget"
-  strategy="afterInteractive"
+  id="chat-widget"
   dangerouslySetInnerHTML={{
-    __html: `
-      window.$crisp=[];
-      window.CRISP_WEBSITE_ID="9f460efd-73d6-4fd2-af0f-11d2591c0e7c";
-      (function(){
-        const d = document;
-        const s = d.createElement("script");
-        s.src = "https://client.crisp.chat/l.js";
-        s.async = 1;
-        d.getElementsByTagName("head")[0].appendChild(s);
-      })();`,
+    __html: `function initFreshChat() {     window.fcWidget.init({       token: "91a3199a-6765-42fb-b823-f7cc88711c67",       host: "https://wchat.freshchat.com"     });   }   function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk Messaging-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);`,
   }}
 />
       <Navigation />
