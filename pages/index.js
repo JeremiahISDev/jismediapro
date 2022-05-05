@@ -27,7 +27,7 @@ export default function Home() {
 						Text Me
 		</button>
 				</Link>
-				<Link href="mailto:jeremiahsamue@marlboro.k12.nj.us"><button className="text-lg text-center font-bold bg-blue-700 m-2 rounded-2xl text-white p-8 h-fit">
+				<Link href="mailto:jismediapro.brand@gmail.com"><button className="text-lg text-center font-bold bg-blue-700 m-2 rounded-2xl text-white p-8 h-fit">
 					Email Me
 		</button>
 				</Link>
