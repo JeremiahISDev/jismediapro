@@ -12,14 +12,14 @@ export default function Portfolio({ Component, pageProps }) {
 		<Script
   id="chat-widget"
   dangerouslySetInnerHTML={{
-    __html: `
-    var _protocol="https:"==document.location.protocol?" https://":" http://";
-    _site_hash_code = "db598c4456029143d3348361e779aec6",_suid=26361, plerdyScript=document.createElement("script");
-    plerdyScript.setAttribute("defer",""),plerdyScript.dataset.plerdymainscript="plerdymainscript",
-    plerdyScript.src="https://a.plerdy.com/public/js/click/main.js?v="+Math.random();
-    var plerdymainscript=document.querySelector("[data-plerdymainscript='plerdymainscript']");
-    plerdymainscript&&plerdymainscript.parentNode.removeChild(plerdymainscript);
-    try{document.head.appendChild(plerdyScript)}catch(t){console.log(t,"unable add script tag")}
+    __html: `   (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2957145,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 `,
   }}
 />
