@@ -12,18 +12,7 @@ export default function Portfolio({ Component, pageProps }) {
 		<Script
   id="chat-widget"
   dangerouslySetInnerHTML={{
-    __html: `var _glc =_glc || []; _glc.push('all_ag9zfmNsaWNrZGVza2NoYXRyEgsSBXVzZXJzGICAyKHZ49oKDA');
-if(document.location.hostname != 'localhost'){
-	var glcpath = (('https:' == document.location.protocol) ? 'https://my.clickdesk.com/clickdesk-ui/browser/' : 
-	'http://my.clickdesk.com/clickdesk-ui/browser/');
-	var glcp = (('https:' == document.location.protocol) ? 'https://' : 'http://');
-}else{
-	var glcpath = 'http://localhost:8888/clickdesk-ui/browser/';
-	var glcp = 'http://';
-}
-var glcspt = document.createElement('script'); glcspt.type = 'text/javascript'; 
-glcspt.async = true; glcspt.src = glcpath + 'livechat-cloud-new.js';
-var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glcspt, s);`,
+    __html: `window.$crisp=[];window.CRISP_WEBSITE_ID="b63678f6-e71f-4f61-a902-3d322733893e";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`,
   }}
 />
       <Navigation />
