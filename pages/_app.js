@@ -12,20 +12,15 @@ export default function Portfolio({ Component, pageProps }) {
 		<Script
   id="chat-widget"
   dangerouslySetInnerHTML={{
-    __html: `(function(d,t) {
-        var BASE_URL="https://app.chatwoot.com";
-        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=BASE_URL+"/packs/js/sdk.js";
-        g.defer = true;
-        g.async = true;
-        s.parentNode.insertBefore(g,s);
-        g.onload=function(){
-          window.chatwootSDK.run({
-            websiteToken: 'f4GLk9iMJBENDF8yPM6EmhVi',
-            baseUrl: BASE_URL
-          })
-        }
-      })(document,"script");`,
+    __html: `
+    var _protocol="https:"==document.location.protocol?" https://":" http://";
+    _site_hash_code = "db598c4456029143d3348361e779aec6",_suid=26361, plerdyScript=document.createElement("script");
+    plerdyScript.setAttribute("defer",""),plerdyScript.dataset.plerdymainscript="plerdymainscript",
+    plerdyScript.src="https://a.plerdy.com/public/js/click/main.js?v="+Math.random();
+    var plerdymainscript=document.querySelector("[data-plerdymainscript='plerdymainscript']");
+    plerdymainscript&&plerdymainscript.parentNode.removeChild(plerdymainscript);
+    try{document.head.appendChild(plerdyScript)}catch(t){console.log(t,"unable add script tag")}
+`,
   }}
 />
       <Navigation />
